@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.flip-clock {
+  --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+  --fcc-digit-block-width: 30px; /* width of digit card */
+  --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+  --fcc-digit-font-size: 30px; /* font size of digit */
+  --fcc-digit-color: #000000; /* color of digit */
+  --fcc-label-font-size: 14px; /* font size of label */
+  --fcc-label-color: #fff; /* color of label */
+  --fcc-background: #ffffff; /* background of digit card */
+  --fcc-divider-color: #000000; /* color of divider */
+  --fcc-divider-height: 1px; /* height of divider */
+  --fcc-separator-size: 6px; /* size of colon */
+  --fcc-separator-color: rgb(255, 255, 255); /* color of colon */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.8018557764902836) 50%, rgba(252,176,69,1) 100%);
+  overflow: hidden;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.page__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page h1 {
+  font-size: 3em;
+  text-align: center;
+  /* margin-bottom: 1rem; */
+  color: white;
+}
+
+.page small{
+  margin-bottom: 1rem;
+  font-family: 'Poppins';
+  color: white;
+}
+
+
+
+
+.flip-clock {
+  font-family: 'Orbitron';
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+
+
+/* screens bigger than 900px */
+@media (min-width: 900px) {
+  .page h1 {
+    font-size: 4rem;
+  }
+  .page h3 {
+    max-width: 600px;
+  }
+  .flip-clock {
+    --fcc-digit-block-width: 80px;
+    --fcc-digit-block-height: 120px;
+    --fcc-digit-font-size: 60px;
+    --fcc-label-font-size: 20px;
+  }
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.logo{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: -5rem;
+    border-radius: 1rem;
+    margin-top: -0.5rem;
+    -webkit-box-shadow: 4px 10px 59px -30px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 10px 59px -30px rgba(0,0,0,0.75);
+box-shadow: 4px 10px 59px -30px rgba(0,0,0,0.75);
+    
+
+  }
+
+  .logo > img {
+    margin-top: 10px;
+  }
+
+
+ 
