@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dproevent/static/css/main.78380dca.css",
+    "main.js": "/dproevent/static/js/main.df793265.js",
+    "static/media/logo.jpg": "/dproevent/static/media/logo.f0dd209e25c6c3baee63.jpg",
+    "index.html": "/dproevent/index.html",
+    "main.78380dca.css.map": "/dproevent/static/css/main.78380dca.css.map",
+    "main.df793265.js.map": "/dproevent/static/js/main.df793265.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78380dca.css",
+    "static/js/main.df793265.js"
+  ]
+}
